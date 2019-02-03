@@ -1,19 +1,79 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Test</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
-<body>
-    <<ul class="list-unstyled">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-    </ul>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>test</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    
+        <script>
+            console.log('Script is running.');
+           
+        </script>
+
+    </head>
+    <body>
+
+          
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+             <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://zurashvili.net">Count</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="http://zurashvili.net">Главная</a></li>
+                        <li><a href="http://zurashvili.net">Главная</a></li>
+                        <li><a href="http://zurashvili.net">Главная</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="site-wrapper">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-12 col-md-12">
+                        <h3>Счетчик символов</h3>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                        <label for="gettext"><p>Ведите текст:</p></label>
+                        <textarea class="form-control" rows="5" id="get-text" data-toggle="tooltip" data-placement="bottom" title="Ведите любой текст"></textarea>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                        <label for="settext"><p>Выводимый текст:</p></label>
+                        <textarea class="form-control" rows="5" id="set-text" disabled></textarea>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-lg-12 col-md-12">
+                        <button class="btn btn-outline-success" type="button" id="reset" data-toggle="tooltip" data-placement="left" title="Очистить поля">Очистить</button>
+                        <p class="count-text">Добавленно символов: <span id="count-letters"> 0</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+       
+
+
+    </body>
 </html>
